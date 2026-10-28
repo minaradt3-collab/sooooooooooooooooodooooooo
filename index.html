@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>For Sodo</title>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Fraunces:ital,wght@1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="c"></canvas>
+<div id="hero">
+<div class="t" id="hint">tap to let the light go</div>
+<div class="t" id="name"></div>
+<div class="t" id="line"></div>
+<div class="t" id="cue">keep scrolling &darr;</div>
+</div>
+<main>
+<section class="sec"><h2>Little lights, little notes</h2><div id="cards"></div></section>
+<section class="flower" id="flower"><div class="stick"><h2>Some lights open slowly</h2><svg viewBox="0 0 300 340" aria-hidden="true"><defs><linearGradient id="pg" gradientUnits="userSpaceOnUse" x1="0" y1="230" x2="0" y2="112"><stop offset="0" stop-color="#ffb347"/><stop offset="1" stop-color="#d3122b"/></linearGradient><radialGradient id="gl"><stop offset="0" stop-color="#ffd27a" stop-opacity=".9"/><stop offset="1" stop-color="#ff5a3c" stop-opacity="0"/></radialGradient></defs><circle id="fglow" cx="150" cy="190" r="120" fill="url(#gl)" opacity="0"/><path d="M150 232C150 270 144 300 150 336" stroke="#3f8a55" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M148 300C120 292 108 270 104 252C132 256 146 272 148 300Z" fill="#3f8a55"/><path d="M151 284C176 278 190 260 196 244C170 246 154 260 151 284Z" fill="#3f8a55"/><g id="petals"></g><circle cx="150" cy="226" r="9" fill="#ffd27a"/></svg><p id="fcap"></p></div></section>
+<section class="sec"><h2>A secret under the glass</h2><p>Scratch it with your finger.</p><div class="scratch"><div class="smsg" id="smsg"></div><canvas id="sc"></canvas></div></section>
+<section class="sec"><h2>Catch the lights</h2><p>Tap the lanterns before they fly away.</p><div id="arena"></div><div id="score"></div><button id="play">Start</button></section>
+<section class="sec"><h2>Make a wish</h2><p>Type it, and a lantern will carry it up.</p><div class="row"><input id="wishin" maxlength="40" placeholder="I wish..." autocomplete="off"><button id="wishbtn">Send it up</button></div></section>
+<section class="finale" id="finale"><canvas id="fin"></canvas><button id="top">Back to the lanterns</button></section>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
